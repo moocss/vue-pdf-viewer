@@ -281,7 +281,7 @@ export default {
 
     #content {
       align-items: center;
-      color: #fff;
+      color: #4698fe;
       direction: ltr;
       display: flex;
       font-size: 0.81rem;
@@ -297,9 +297,9 @@ export default {
       }
 
       input {
-        background: rgba(0, 0, 0, 0.5);
+        background: #fff;
         border: none;
-        color: white;
+        color: #4698fe;
         font-family: inherit;
         line-height: inherit;
         outline: none;
@@ -317,9 +317,9 @@ export default {
     #zoom-controls {
       align-items: center;
       display: flex;
-      padding: 0 4px;
+      padding: 0 10px;
       input {
-        background: rgba(0, 0, 0, 0.5);
+        background: #fff;
         border: none;
         caret-color: currentColor;
         color: inherit;

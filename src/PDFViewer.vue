@@ -90,11 +90,11 @@ export default {
     },
     loadingText: {
       type: String,
-      default: 'Loading',
+      default: '文件加载中',
     },
     renderingText: {
       type: String,
-      default: 'Rendering',
+      default: '正在读取内容',
     },
   },
   components: {
@@ -225,28 +225,29 @@ export default {
 
 <style lang="scss">
 .icon-btn {
-  width: 36px;
-  height: 36px;
+  width: 28px;
+  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   transition: all 200ms ease;
   cursor: pointer;
+  color: #4698fe;
   &:hover {
-    background: #474545;
+    background: #fff;
   }
 }
 .pdf-viewer {
   // css-var
   --iron-icon-height: 20px;
   --iron-icon-width: 20px;
-  --viewer-icon-ink-color: rgb(189, 189, 189);
-  --viewer-pdf-toolbar-background-color: rgb(50, 54, 57);
-  --viewer-text-input-selection-color: rgba(255, 255, 255, 0.3);
-  --viewer-pdf-toolbar-height: 56px;
+  --viewer-icon-ink-color: #4698fe;
+  --viewer-pdf-toolbar-background-color: #dceffe;
+  --viewer-text-input-selection-color: #fff;
+  --viewer-pdf-toolbar-height: 42px;
 
-  background-color: #ccc;
+  background-color: #fff;
   height: 100%;
   // max-height: 100vh;
   overflow: hidden;
@@ -259,11 +260,11 @@ export default {
     flex-shrink: 0;
     align-items: center;
     background-color: var(--viewer-pdf-toolbar-background-color);
-    color: white;
+    color: #4698fe;
     display: flex;
     height: var(--viewer-pdf-toolbar-height);
     padding: 0 16px;
-    box-shadow: 0px 3px 10px 2px black;
+    box-shadow: 0px 3px 10px 2px #eaeaea;
     z-index: 999;
     &.not-ready {
       position: relative;
@@ -279,7 +280,7 @@ export default {
   }
 
   &__body {
-    height: calc(100% - 56px);
+    height: calc(100% - 42px);
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -291,7 +292,7 @@ export default {
       height: 100%;
       width: 100%;
       pointer-events: none;
-      background: #a9a9a9;
+      background: #fff;
       .loading-content,
       .rendering-content {
         height: 100%;
@@ -299,6 +300,8 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        color: #4698fe;
+        font-size: 16px;
       }
     }
   }
