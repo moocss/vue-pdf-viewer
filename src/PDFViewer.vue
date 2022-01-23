@@ -108,7 +108,7 @@ export default {
       page: 1,
       total: 1,
       catalogVisible: true,
-      zoom: 100,
+      zoom: 175,
       rotate: 0,
       isFullpage: false,
       filename: '',
